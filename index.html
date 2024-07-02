@@ -5,136 +5,168 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body> 
 
-  <div class="cuerpo">
 
-    <section class="encabezado">
-      <div class="img">
-        <div class="contenido">
-          <h1>la casa de papel</h1>
-          <p class="sinopsis">
-            Un peligroso gangster de Birmingham en 1919, el líder de los Peaky
-            Blinders, Tommy Shelby, persigue una ambición que lo saca a él y a
-            su familia.
-          </p>
-          <div class="botones">
-            <a href="">
-              <button class="boton_encabezado">Reproducir</button>
-            </a>
+  <!-- BANNER -->
 
-            <a href="">
-              <button class="boton_encabezado">Mi lista</button>
-            </a>
-          </div>
-        </div>
+
+  <div class="container-fluid banner">
+
+    <div class="row">
+      <div class="col-12 contenido_banner">
+        <h1 class="text-light pb-2  ">Peaky Blinders</h1> <!-- p-3 fs-2 border-top border-3 -->
+        <p class="text-light col-6">Un peligroso gangster de Birmingham en 1919, el líder de los Peaky
+          Blinders, Tommy Shelby, persigue una ambición que lo saca a él y a
+          su familia de la pobreza.</p>
+        <button class="btn btn-secondary">Reproducir</button>
+        <button class="btn btn-secondary">Ver episodios</button>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <div class="texto">
-      <h2>Personajes</h2>
+
+ <!-- PERSONAJES -->
+
+
+  <div class=" personajes">
+
+    <h1 class="text-light text-center mb-5">Personajes</h1>
+
+    <div class="row">
+
+      <div class="personajes_imagenes">
+
+        <a href="#">
+          <img class="mx-3 imagenes" src="/img/Tommy.jpg" alt=""></a>
+        <a href="#">
+          <img class="mx-3 imagenes" src="/img/arthur.jpg" alt=""></a>
+        <a href="#">
+          <img class="mx-3 imagenes" src="/img/jhon.jpg" alt=""></a>
+        <a href="#">
+          <img class="mx-3 imagenes" src="/img/polly.jpg" alt=""></a>
+        <a href="#">
+          <img class="mx-3 imagenes" src="/img/ada.jpg" alt=""></a>
+
+      </div>
+
     </div>
 
+  </div>
 
 
-    <!-- CARRUSEL -->
+<!-- TEMPORADAS -->
 
 
+<div class="container temporadas"> 
 
-    <section class="carrusel">
-      <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-item"><img class="personajes" src="img/tommy.jpg" alt="Tommy Shelby"></div>
-          <div class="carousel-item"><img class="personajes" src="img/arthur.jpg" alt="Arthur Shelby"></div>
-          <div class="carousel-item"><img class="personajes" src="img/Jhon.jpg" alt="John Shelby"></div>
-          <div class="carousel-item"><img class="personajes" src="img/polly.jpg" alt="Polly Gray"></div>
-          <div class="carousel-item"><img class="personajes" src="img/Ada.jpg" alt="Ada Shelby"></div>
-          <div class="carousel-item"><img class="personajes" src="img/michael.jpg" alt="Michael Gray"></div>
-          <div class="carousel-item"><img class="personajes" src="img/Finn.jpg" alt="Finn Shelby"></div>
-        </div>
-        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+  <h1 class="text-light text-center mb-5">Temporadas</h1>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active " data-bs-interval="3000">
+        <img src="img/temporada 1.jpg" class="d-block w-100" alt="duki1">
       </div>
-    </section>
-
-    <!-- FIN DEL CARRUSEL -->
-
-
-    <h2>Explora más</h2>
-
-    <section>
-      <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/temporada 2.jpg" class="d-block w-100" alt="duki2">
       </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/temporada 3.jpg" class="d-block w-100" alt="duki3">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/temporada 4.jpg" class="d-block w-100" alt="duki3">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/temporada 5.jpg" class="d-block w-100" alt="duki3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-      <h2>Detalles de la serie</h2>
-
-      <hr>
-
-      <section class="generos_elencos">
-        <div class="generos">
-          <h3>Géneros</h3>
-          <p>Dramas de TV, Crimen TV, Dramas Britanicos</p>
-        </div>
-        <div class="elencos">
-          <h3>Elenco</h3>
-          <p>Cillian Murphy, Paul Anderson, Helen McGray</p>
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="creadores_año_de_estreno">
-        <div class="creadores">
-          <h3>Creadores</h3>
-          <p>Steven Knight</p>
-        </div>
-        <div class="año_de_estreno">
-          <h3>Años de estreno</h3>
-          <p>2013</p>
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="edad_numero_de_temporadas">
-        <div class="edad">
-          <h3>Edad</h3>
-          <p>16+</p>
-        </div>
-        <div class="numeros_de_temporadas">
-          <h3>Números de temporadas</h3>
-          <p>6</p>
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="idiomas_audio_subtitulos">
-        <div class="audio">
-          <h3>Idiomas de audio</h3>
-          <p>Español, Ingles (Original)</p>
-        </div>
-        <div class="subtitulos">
-          <h3>Idiomas de subtítulos </h3>
-          <p>Ingles (Original), Español</p>
-        </div>
-      </section>
+</div>
 
 
-    </div> <!-- CUERPO -->
+<!-- EXPLORA MAS -->
 
-  <script src="script.js"></script>
+
+<div class="container explora_mas">
+
+  <h2 class="text-light mb-4">Detalles de la serie</h2>
+
+  <hr>
+
+  
+
+  <section class="generos_elencos d-flex">
+    <div class="generos text-light">
+      <h3>Géneros</h3>
+      <p>Dramas de TV, Crimen TV, Dramas Britanicos</p>
+    </div>
+    <div class="elencos text-light">
+      <h3>Elenco</h3>
+      <p>Cillian Murphy, Paul Anderson, Helen McGray</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="creadores_año_de_estreno d-flex">
+    <div class="creadores text-light">
+      <h3>Creadores</h3>
+      <p>Steven Knight</p>
+    </div>
+    <div class="año_de_estreno text-light">
+      <h3>Años de estreno</h3>
+      <p>2013</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="edad_numero_de_temporadas d-flex text-light">
+    <div class="edad -4">
+      <h3>Edad</h3>
+      <p>16+</p>
+    </div>
+    <div class="numeros_de_temporadas">
+      <h3>Números de temporadas</h3>
+      <p>6</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="idiomas_audio_subtitulos d-flex text-light">
+    <div class="audio">
+      <h3>Idiomas de audio</h3>
+      <p>Español, Ingles (Original)</p>
+    </div>
+    <div class="subtitulos">
+      <h3>Idiomas de subtítulos </h3>
+      <p>Ingles (Original), Español</p>
+    </div>
+  </section>
+
+</div>
 
   <footer>
-    
+
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -1,143 +1,65 @@
-
-* {
-  background-color: #171523;
+body{
+  background-color: black;
 }
 
-
-.cuerpo {
-  margin-top: 80px;
-  margin-right: 200px;
-  margin-left: 200px;
-}
-
-h1 {
-  background: none;
-  font-size: 45px;
-  color: white;
-  font-weight: bolder;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-}
-
-h2 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  color: white;
-}
-
-
-
-
-
-
-/*ENCABEZADO*/
-
-
-
-
-  
-.img {
-  height: 550px;
-  margin-top: 200;
+.banner{
   background-image: url(/img/encabezado.jpg);
-  background-position: 2958px;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  
 }
 
-.contenido {
+.contenido_banner{
   margin-top: 300px;
-  margin-left: 40px;
-  background: none;
-}
-
-p {
-  background: none;
-  color: white;
-  font-family: BlinkMacSystemFont;
-  font-size: 18px;
-}
-
-.boton_encabezado{
-  height: 30px;
-  width: 200px;
-  background-color: white;
-  border: none;
-  border-radius: 20px;
-}
-
-.botones{
-  background: none;
-}
-
-/* CARRUSEL */
-
-.carousel-container {
-  position: relative; /* Necesario para que los botones de navegación se posicionen correctamente dentro del contenedor */
-  overflow: hidden; /* Oculta las imágenes que están fuera del área visible del carrusel */
-  border-radius: 20px; /* Bordes redondeados para una apariencia más suave */
-}
-
-.carousel {
-  display: flex; /* Utiliza flexbox para organizar las imágenes en una fila */
-  transition: transform 0.5s ease-in-out; /* Transición suave cuando se desplaza el carrusel */
-}
-
-.carousel-item {
-  min-width: 10%; /* Ancho mínimo de cada ítem para que se muestren cinco imágenes en el carrusel */
-  transition: opacity 2s ease-in-out; /* Transición suave de opacidad */
-}
-
-.carousel-item img {
-  width: 130%; /* Hace que la imagen ocupe todo el ancho del ítem */
-  height: 500px; /* Fija la altura de la imagen */
-  border-radius: 20px; /* Bordes redondeados para las imágenes */
-}
-
-.carousel-control {
-  position: absolute; /* Los posiciona dentro del contenedor relativo */
-  top: 50%; /* Los centra verticalmente */
-  transform: translateY(-50%); /* Ajuste fino para centrar verticalmente */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para que sean visibles pero no dominen */
-  color: white; /* Color del texto */
-  border: none; /* Sin bordes */
-  font-size: 2rem; /* Tamaño de fuente grande */
-  padding: 10px; /* Espaciado interno */
-  cursor: pointer !; /* Cambia el cursor a una mano para indicar interactividad */
-}
-
-.prev {
-  left: 30px !important; /* Coloca el botón anterior a la izquierda */
-}
-
-.next {
-  right: 30px !important; /* Coloca el botón siguiente a la derecha */
 }
 
 
+.personajes{
+  margin-top: 75px;
+}
 
-/* Detalles de la serie */
+.personajes_imagenes{
+  text-align: center 
+}
+
+
+/* TEMPORADAS */
+
+
+.temporadas{
+  margin-top:75px;
+}
+
+.temporadas img :hover{
+  
+  
+}
+
 
 h3{
-  color: white !important;
+  color: white;
+}
+
+
+.explora_mas{
+  margin-top: 75px;
 }
 
 .generos_elencos{
-  display: flex !important;
-  gap: 570px !important;
+  gap: 500px;
 }
 
 .creadores_año_de_estreno{
-  display: flex !important;
-  gap: 1017px !important;
+gap: 693px;
 }
 
 .edad_numero_de_temporadas{
-  display: flex !important;
-  gap: 1009px !important;
+gap: 756px;
 }
 
 .idiomas_audio_subtitulos{
-  display: flex !important;
-  gap: 900px !important; 
+gap: 604px;
 }
+
