@@ -80,3 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
       element.style.transition = 'transform 1s ease-in-out';
   }
 });
+
+/* AOS Library */
+

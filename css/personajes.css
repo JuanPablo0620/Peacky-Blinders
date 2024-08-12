@@ -1,0 +1,96 @@
+/* GLOBALES */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+
+
+
+
+body{
+    background-color: #172b36 !important;
+}
+
+*{
+    margin: auto;
+    padding: auto;
+    font-family: 'Special Elite', cursive;
+}
+
+.redireccion{
+    margin:45px 0px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.redireccion_logo{
+    width: 25%;
+    height: 25%;
+    transition: 0.8s;
+}
+
+.redireccion_logo:hover{
+    width: 35%;
+    height: 35%;
+}
+
+#banner_tommy{
+    background-image: url(../img/tommy\ shelby\ personajes\ banner.jpg);
+    background-size: cover;
+    object-fit: cover;
+    backdrop-filter: blur(30px);
+}
+
+#banner_arthur{
+    background-image: url(../img/arthur\ banner.jpg);
+    background-size: cover;
+    object-fit: cover;
+    backdrop-filter: blur(30px);
+}
+
+#banner_jhon{
+    background-image: url(../img/jhon\ banner.jpg);
+    background-size: cover;
+    backdrop-filter: blur(20px);
+}
+
+#banner_polly{
+    background-image: url(../img/polly\ banner.jpg);
+    background-size: cover;
+    backdrop-filter: blur(20px);
+}
+
+#banner_ada{
+    background-image: url(../img/ada\ banner.jpg);
+    background-size: cover;
+    backdrop-filter: blur(20px);
+}
+
+.tommy_shelby img{
+    object-fit: cover;
+    height: 482px;
+    width:826px;
+    display: flex; /* Elimina cualquier espacio adicional que pueda haber */
+}
+
+.descripcion{
+    margin: 70px 0px ;
+}
+
+.descripcion_personajes{
+    padding: 30px;
+}
+
+.descripcion span{
+    font-size: 14px;
+}
+
+.descripcion p{
+    padding: 30px;
+    font-size:20px;
+}
+
+
+
+
+
+

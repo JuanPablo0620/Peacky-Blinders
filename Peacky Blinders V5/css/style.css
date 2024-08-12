@@ -1,11 +1,11 @@
 /* GLOBALES */
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 body {
-  background-color: #172b36;
+  background-color: black;
   color: white;
   font-family: 'Special Elite', cursive;
 }
-
 
 hr {
   border-color: white;
@@ -14,23 +14,16 @@ hr {
 /* BANNER */
 
 .banner {
-  background-image: url(/img/encabezado.jpg);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 700px;
   display: flex;
   align-items: center;
-  justify-content: auto; 
+  justify-content: auto;
+  
 }
-
-@media (max-width 780px){
-  .banner h1{
-    font-size: 50px;
-  }
-}
-
-
 
 .banner h1 {
   font-size: 100px;
@@ -38,19 +31,14 @@ hr {
 
 .contenido_banner{  
   display: auto;
-  text-align: justify;  
+  text-align: justify;
+  margin-left:160px ;
 }
 
 .contenido_banner p {
   margin-bottom: 1rem;
-  font-size: 25px;
+   font-size: 25px;
   width: 40%;
-}
-
-@media (max-width 780px){
-  .contenido_banner p{
-    font-size: 15px;
-  }
 }
 
 .botones{
@@ -58,13 +46,6 @@ hr {
 }
 
 /* FIN DEL BANNER */
-
-
-/* PERSONAJES */
-
-.personajes{
-  padding: 30px;
-}
 
 .personajes_imagenes {
   display: flex;
@@ -110,36 +91,14 @@ hr {
   text-transform: uppercase;
 }
 
-/* FIN DE PERSONAJES */
-
-
-/* TEMPORADAS */
-
-
-.temporadas{
-  padding: 30px;
-}
-
 .temporadas img {
   cursor: pointer;
   transition: transform 0.3s ease;
-  height: 400px;
-  width:350px;
-  object-fit: contain;
-  object-position: center 0%;
-
 }
 
 .temporadas img:hover {
   transform: scale(1.05);
 }
-
-
-/* FIN DE TEMPORADAS */
-
-
-/* EXPLORAR MAS */
-
 
 .explora_mas h2, .explora_mas h3 {
   font-family: 'Special Elite', cursive;
@@ -156,26 +115,9 @@ hr {
   margin-bottom: 1rem;
 }
 
-
-/* FIN DE EXPLORAR MAS */
-
-
-/* TRAILERS */
-
-/* FIN DE TRAILERS */
-
-.slider-container h1{
-  display: flex;
-  justify-content: center;
-}
-
-.slider-container video{
-  height: 480px;
-  width: 640px;
-}
-
 .slider-container {
   padding: 40px 0;
+  background-color: #000000;
 }
 
 .slider {

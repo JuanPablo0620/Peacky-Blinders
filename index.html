@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inicio</title>
+  <title>Inicio</title> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
 </head>
 
 <body> 
@@ -16,7 +18,7 @@
   <!-- BANNER -->
 
 
-  <div class="container-fluid banner">
+  <div class="container-fluid banner col-md-6">
 
     <div class="row">
       <div class="col-12 contenido_banner">
@@ -24,8 +26,10 @@
         <p class="text-light col-6">Un peligroso gangster de Birmingham en 1919, el líder de los Peaky
           Blinders, Tommy Shelby, persigue una ambición que lo saca a él y a
           su familia de la pobreza.</p>
-        <button class="btn btn-secondary">Reproducir</button>
-        <button class="btn btn-secondary">Ver episodios</button>
+          <div class="botones">
+           <button class="btn btn-secondary">Reproducir</button>
+           <button class="btn btn-secondary">Ver episodios</button>
+         </div>
       </div>
     </div>
   </div>
@@ -34,36 +38,70 @@
  <!-- PERSONAJES -->
 
 
-  <div class=" personajes">
+ <div class="personajes mt-5">
 
-    <h1 class="text-light text-center mb-5">Personajes</h1>
+  <h1 class="text-light text-center mb-5">Personajes</h1>
+  <div class="row">
 
-    <div class="row">
+      <div class="personajes_imagenes d-flex ">
 
-      <div class="personajes_imagenes">
+          <div class="imagen-container">
+              <a href="personajes.html#banner_tommy">
+                  <img class="mx-3 imagenes" src="/img/Tommy.jpg" alt="">
+                  <div class="contenido">
+                      <p class="texto-hover">Tommy</p>
+                  </div>
+              </a>
+          </div>
 
-        <a href="#">
-          <img class="mx-3 imagenes" src="/img/Tommy.jpg" alt=""></a>
-        <a href="#">
-          <img class="mx-3 imagenes" src="/img/arthur.jpg" alt=""></a>
-        <a href="#">
-          <img class="mx-3 imagenes" src="/img/jhon.jpg" alt=""></a>
-        <a href="#">
-          <img class="mx-3 imagenes" src="/img/polly.jpg" alt=""></a>
-        <a href="#">
-          <img class="mx-3 imagenes" src="/img/ada.jpg" alt=""></a>
+          <div class="imagen-container">
+              <a href="personajes.html#banner_arthur">
+                  <img class="mx-3 imagenes" src="/img/arthur.jpg" alt="">
+                  <div class="contenido">
+                      <p class="texto-hover">Arthur</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="imagen-container">
+              <a href="personajes.html#banner_jhon">
+                  <img class="mx-3 imagenes imagen_jhon" src="/img/jhon.jpg" alt="">
+                  <div class="contenido">
+                      <p class="texto-hover">JHON</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="imagen-container">
+              <a href="personajes.html#banner_polly">
+                  <img class="mx-3 imagenes" src="/img/polly.jpg" alt="">
+                  <div class="contenido">
+                      <p class="texto-hover">Polly</p>
+                  </div>
+              </a>
+          </div>
+
+          <div class="imagen-container">
+              <a href="personajes.html#banner_ada">
+                  <img class="mx-3 imagenes" src="/img/ada.jpg" alt="">
+                  <div class="contenido">
+                      <p class="texto-hover">Ada</p>
+                  </div>
+              </a>
+          </div>
 
       </div>
 
-    </div>
-
   </div>
+
+</div>
+
 
 
 <!-- TEMPORADAS -->
 
 
-<div class="container temporadas"> 
+<div class="container temporadas mt-5"> 
 
   <h1 class="text-light text-center mb-5">Temporadas</h1>
 
@@ -101,7 +139,7 @@
 <!-- EXPLORA MAS -->
 
 
-<div class="container explora_mas">
+<div class="container explora_mas mt-5">
 
   <h2 class="text-light mb-4">Detalles de la serie</h2>
 
@@ -161,11 +199,82 @@
 
 </div>
 
+<!-- TRAILERS -->
+
+<div class="slider-container mt-5">
+  <div class="slider">
+    <div>
+      <h5>Temporada 1</h5>
+      <video width="100%" height="auto" controls>
+        <source src="img/Peaky Blinders_ Tráiler (360p).mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <h5>Temporada 2</h5>
+      <video width="100%" height="auto" controls>
+        <source src="video/Peaky Blinders - Trailer 2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <h5>Temporada 3</h5>
+      <video width="100%" height="auto" controls>
+        <source src="video/Peaky Blinders - Trailer 3.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <h5>Temporada 4</h5>
+      <video width="100%" height="auto" controls>
+        <source src="video/Peaky Blinders - Trailer 4.mp4" type="video/mp4"> 
+      </video>
+    </div>
+    <div>
+      <h5>Temporada 5</h5>
+      <video width="100%" height="auto" controls>
+        <source src="video/Peaky Blinders - Trailer 5.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <h5>Temporada 6</h5>
+      <video width="100%" height="auto" controls>
+        <source src="video/Peaky Blinders - Trailer 6.mp4" type="video/mp4">
+      </video>
+    </div>
+    <!-- Agregar más videos según sea necesario -->
+  </div>
+</div>
+
+
+
   <footer>
 
+    
   </footer>
 
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>'
+      });
+    });
+  </script>
+  
+  
+<footer>
+    <p></p>
+</footer>
 
 </body>
 
