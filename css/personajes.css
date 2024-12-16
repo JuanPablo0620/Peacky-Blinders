@@ -90,7 +90,23 @@ body{
 }
 
 
+/* RESPONSIVE BANNER */
 
+@media(max-width:576px){
 
+    .tommy_shelby img {
+        width: 100%;
+    }
+
+    .descripcion p{
+        font-size: 16px;
+        text-align:center;
+    }
+
+    .slider-container video {
+        height: 480px;
+        width: 420px;
+    }
+}
 
 

@@ -39,6 +39,7 @@ hr {
 .contenido_banner{  
   display: auto;
   text-align: justify;  
+  margin-left: 80px;
 }
 
 .contenido_banner p {
@@ -199,3 +200,41 @@ hr {
 footer{
   margin-bottom: 0px;
 }
+
+
+/* RESPONSIVE */
+
+/* RESPONSIVE BANNER */
+
+@media(max-width:576px){
+  .contenido_banner {
+    margin-top: ;
+  }
+
+  .banner h1 {
+    text-align: center;
+  }
+
+  .banner p {
+    width: 100%;
+  }
+
+  .botones {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  /* RESPONSIVE PERSONAJES */
+
+.personajes_imagenes{
+ display: inline !important; 
+ text-align: center;
+}
+
+.imagenes{
+  display: inline;
+}
+
+}
+
+
